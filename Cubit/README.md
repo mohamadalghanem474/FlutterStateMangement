@@ -1,16 +1,23 @@
-# state_mangement
+## Cubit
 
-A new Flutter project.
+**Overview:**
 
-## Getting Started
+- **Description:** A simplified version of Bloc, removing boilerplate associated with events.
+- **Use Case:** Suitable for less complex state management while retaining Bloc's benefits.
 
-This project is a starting point for a Flutter application.
+### Diagram
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+├── core/
+│   └── utils.dart                # Contains utility functions, constants, etc.
+├── cubit/
+│   └── example_cubit.dart        # Manages state using Cubit.
+├── views/
+│   ├── example_view.dart         # Reacts to state changes using BlocBuilder.
+│   └── components/
+│       └── example_component.dart # Reusable UI components.
+└── main.dart                      # Entry point of the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```

@@ -1,16 +1,25 @@
-# state_mangement
+## Hive
 
-A new Flutter project.
+**Overview:**
 
-## Getting Started
+- **Description:** A lightweight, fast, and easy-to-use NoSQL database solution with support for local storage and state persistence.
+- **Use Case:** Ideal for applications requiring offline data storage and synchronization with server-side databases.
 
-This project is a starting point for a Flutter application.
+### Diagram
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+├── core/
+│   └── utils.dart                # Contains utility functions, constants, etc.
+├── models/
+│   └── example_model.dart        # Contains data models and business logic.
+├── views/
+│   ├── example_view.dart         # Renders UI elements based on the Presenter.
+│   └── components/
+│       └── example_component.dart # Reusable UI components.
+├── presenters/
+│   └── example_presenter.dart    # Mediates between view and model, handles logic.
+└── main.dart                      # Entry point of the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```

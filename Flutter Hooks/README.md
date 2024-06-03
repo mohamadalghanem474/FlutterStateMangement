@@ -1,16 +1,25 @@
-# state_mangement
+## Flutter Hooks
 
-A new Flutter project.
+**Overview:**
 
-## Getting Started
+- **Description:** Flutter Hooks is a library that provides a way to use stateful logic and lifecycle management within functional Flutter widgets.
+- **Use Case:** Ideal for developers who prefer functional programming style and want to manage state without using StatefulWidget.
 
-This project is a starting point for a Flutter application.
+### Diagram
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+├── core/
+│   └── utils.dart                # Contains utility functions, constants, etc.
+├── hooks/
+│   ├── use_example_hook.dart     # Custom hooks implementing stateful logic.
+│   └── use_another_hook.dart     # Additional custom hooks.
+├── views/
+│   ├── example_hook_view.dart    # Consumes stateful logic using hooks.
+│   └── components/
+│       └── example_component.dart # Reusable UI components.
+└── main.dart                      # Entry point of the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+```

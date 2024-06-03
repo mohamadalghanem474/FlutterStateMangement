@@ -1,16 +1,28 @@
-# state_mangement
+## Redux
 
-A new Flutter project.
+**Overview:**
 
-## Getting Started
+- **Description:** Implements unidirectional data flow and centralizes state management in a single store.
+- **Use Case:** Suitable for large applications requiring predictable state transitions.
 
-This project is a starting point for a Flutter application.
+### Diagram
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+├── core/
+│   └── utils.dart                # Contains utility functions, constants, etc.
+├── redux/
+│   ├── actions/
+│   │   └── example_actions.dart  # Defines actions that trigger state changes.
+│   ├── reducers/
+│   │   └── example_reducer.dart  # Updates state based on dispatched actions.
+│   └── store/
+│       └── example_store.dart    # Centralizes state management in a single store.
+├── views/
+│   ├── example_view.dart         # Reacts to state changes using StoreConnector.
+│   └── components/
+│       └── example_component.dart # Reusable UI components.
+└── main.dart                      # Entry point of the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```

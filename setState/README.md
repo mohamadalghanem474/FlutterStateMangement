@@ -1,16 +1,20 @@
-# state_mangement
+## setState
 
-A new Flutter project.
+**Overview:**
 
-## Getting Started
+- **Description::** The simplest form of state management in Flutter,
+  used within a StatefulWidget to update the UI.
+- **Use Case** Suitable for small, local state management within a single widget.
 
-This project is a starting point for a Flutter application.
+### Diagram
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+├── core/
+│   └── utils.dart                # Contains utility functions, constants, etc.
+├── views/
+│   ├── example_view.dart         # Renders UI elements and uses setState for local state management.
+└── main.dart                      # Entry point of the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```

@@ -1,16 +1,24 @@
-# state_mangement
+## Bloc (Business Logic Component)
 
-A new Flutter project.
+**Overview:**
 
-## Getting Started
+- **Description:** Manages state using streams and sinks, separating presentation from business logic.
+- **Use Case:** Ideal for applications needing a clear separation of UI and business logic with reactive programming.
 
-This project is a starting point for a Flutter application.
+### Diagram
 
-A few resources to get you started if this is your first Flutter project:
+```lib/
+├── core/
+│   └── utils.dart                # Contains utility functions, constants, etc.
+├── bloc/
+│   ├── example_bloc.dart         # Manages state using streams and sinks.
+│   ├── example_event.dart        # Defines events that can trigger state changes.
+│   └── example_state.dart        # Represents different states of the UI.
+├── views/
+│   ├── example_view.dart         # Reacts to state changes using BlocBuilder or StreamSubscription.
+│   └── components/
+│       └── example_component.dart # Reusable UI components.
+└── main.dart                      # Entry point of the application.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
